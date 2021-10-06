@@ -2,12 +2,18 @@
 To get git setup on your local environment, follow the steps below.
 
 ## SSH Key
-> ** Note:** Follow the steps in the link below to generate a ssh key, and adding it to the ssh-agent
+> ** Note:** If you do not have a SSH key stored in your local machine, you must generate a new one to use for remote authentication.
 
-Link: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+### Generating a new SSH key
+1. Open your local terminal
+1. Enter this command, `ssh-keygen -t ed25519 -C "your_email@example.com"`, substituting in your GitHub email address. This will create a new SSH key.
+1. When this prompt appears, `> Enter a file in which to save the key (/Users/you/.ssh/id_algorithm): [Press enter]` press Enter. This will accept the default file location. 
+1. Next this prompt will appear, `> Enter passphrase (empty for no passphrase): [Type a passphrase]`, where you should enter a secure passphrase.
+
+After you have followed all the steps above, your SSH keyw will be successfully generated.
 
 ## How to get started
-The steps below will only work once your ssh key is added.
+The steps below will only work once your ssh key is created.
 
 ### Clone repository 
 1. Go to your git repository site
